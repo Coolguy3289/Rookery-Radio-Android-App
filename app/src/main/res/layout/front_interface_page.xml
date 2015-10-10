@@ -6,7 +6,12 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp" >
+        android:padding="5dp"
+        android:id="@+id/tableLayout"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:id="@+id/djinfo"
@@ -54,13 +59,6 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.5" >
 
-                <Button
-                    android:id="@+id/start"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/start" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -69,16 +67,39 @@
                 android:layout_width="0dp"
                 android:layout_weight="0.5" >
 
-                <Button
-                    android:id="@+id/stop"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/stop" />
-
             </LinearLayout>
         </LinearLayout>
 
     </TableLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/birds"
+        android:contentDescription="Rookery Birds"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start"
+        android:layout_below="@+id/tableLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/stop"
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

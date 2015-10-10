@@ -449,8 +449,8 @@ public class RadioService extends Service {
 		{
 			JSONObject info = new JSONObject(rhandler.getList().getString("info"));
 			
-			temp_dj = info.getString("title").replace("&amp;", "&").trim();
-			temp_song = info.getString("artist_song").replace("&amp;", "&").trim();
+			temp_dj = info.getString("server_name").replace("&amp;", "&").trim();
+			temp_song = info.getString("title").replace("&amp;", "&").trim();
 			
 			if(!temp_dj.equals(currentDj) && !temp_dj.equals("")){
 				currentDj = temp_dj;

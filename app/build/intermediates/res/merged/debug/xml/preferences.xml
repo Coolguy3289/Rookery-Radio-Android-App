@@ -14,4 +14,4 @@
        <ListPreference android:title="Show new song" android:key="newsong" android:entryValues="@array/newSongVal" android:dialogTitle="Show new song" android:entries="@array/newSong" android:defaultValue="2"/>
 
 </PreferenceScreen>
-<!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/xml/preferences.xml -->
+<!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/xml/preferences.xml -->

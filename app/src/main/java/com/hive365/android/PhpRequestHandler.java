@@ -41,7 +41,7 @@ public class PhpRequestHandler {
 
 	public JSONObject getList() {
 		JSONParser parser = new JSONParser();
-		return parser.getJSONFromUrl("http://data.hive365.co.uk/stream/info.php");
+		return parser.getJSONFromUrl("http://thegamingcorner.net:8000/status-json.xsl");
 	}
 
 	private boolean sendRequest(String type, String request,

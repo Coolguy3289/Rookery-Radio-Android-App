@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="newSong">
         <item name="Always">Always</item>
@@ -12,7 +12,7 @@
         <item name="2">2</item>
         <item name="3">3</item>
     </string-array>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -24,11 +24,11 @@
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
     <bool name="abc_config_allowActionMenuItemTextWithIcon">false</bool>
     <bool name="abc_config_showMenuShortcutsWhenKeyboardPresent">false</bool>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/analytics.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/analytics.xml -->
     <eat-comment/>
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="abc_input_method_navigation_guard">@android:color/black</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -52,10 +52,10 @@
     <color name="dim_foreground_disabled_material_light">#80323232</color>
     <color name="dim_foreground_material_dark">#ffbebebe</color>
     <color name="dim_foreground_material_light">#ff323232</color>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="green">#00ee00</color>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="highlighted_text_material_dark">#6680cbc4</color>
     <color name="highlighted_text_material_light">#66009688</color>
@@ -76,10 +76,10 @@
     <color name="primary_text_default_material_light">#de000000</color>
     <color name="primary_text_disabled_material_dark">#4Dffffff</color>
     <color name="primary_text_disabled_material_light">#39000000</color>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="red">#ee0000</color>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="ripple_material_dark">#40ffffff</color>
     <color name="ripple_material_light">#40000000</color>
@@ -149,11 +149,11 @@
     <dimen name="abc_text_size_subtitle_material_toolbar">16dp</dimen>
     <dimen name="abc_text_size_title_material">20sp</dimen>
     <dimen name="abc_text_size_title_material_toolbar">20dp</dimen>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -171,14 +171,14 @@
     <item name="split_action_bar" type="id"/>
     <item name="up" type="id"/>
     <integer name="abc_max_action_buttons">2</integer>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="Choon">Choon</string>
     <string name="DJFTW">DJFTW</string>
     <string name="Poon">Poon</string>
     <string name="Request">Request</string>
     <string name="Shoutout">Shoutout</string>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_home_description_format">%1$s, %2$s</string>
@@ -195,17 +195,17 @@
     <string name="abc_searchview_description_voice">Voice search</string>
     <string name="abc_shareactionprovider_share_with">Share with</string>
     <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="action_settings">Settings</string>
     <string name="app_name">Rookery Radio</string>
     <string name="datalabel">Shoutout/Request:</string>
     <string name="djftl">DJFTL</string>
     <string name="djinfo">Loading DJ info....</string>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/analytics.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/analytics.xml -->
     <eat-comment/>
     <string name="ga_trackingId">UA446447311</string>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="imagealt">Hive365 Logo</string>
     <string name="mutetog">Mute</string>
@@ -223,7 +223,7 @@
     <string name="vollabel">Volume:</string>
     <string name="volup">></string>
     <string name="website">Website</string>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
@@ -235,7 +235,7 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
-    <!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance">
         <item name="android:textColor">?android:textColorPrimary</item>
