@@ -41,18 +41,6 @@
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/shoutout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Shoutout" />
-
-        <Button
-            android:id="@+id/request"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/Request" />
-
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="wrap_content"
@@ -73,12 +61,6 @@
                     android:layout_gravity="center"
                     android:text="@string/start" />
 
-                <Button
-                    android:id="@+id/choon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/Choon" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -94,22 +76,9 @@
                     android:layout_gravity="center"
                     android:text="@string/stop" />
 
-                <Button
-                    android:id="@+id/poon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="@string/Poon" />
-
             </LinearLayout>
         </LinearLayout>
 
-        <Button
-            android:id="@+id/djftw"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/DJFTW" />
-
     </TableLayout>
 
-</RelativeLayout><!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/layout/front_interface_page.xml -->
+</RelativeLayout><!-- From: file:/C:/Users/Jon/AndroidStudioProjects/Rookery-Radio-Android-App/app/src/main/res/layout/front_interface_page.xml -->

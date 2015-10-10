@@ -187,7 +187,7 @@ public class FrontPageFragment extends PageFragment{
 			}
 		});
 
-		setButtonAction(v, R.id.choon, new Runnable(){
+/*		setButtonAction(v, R.id.choon, new Runnable(){
 			@Override
 			public void run() {
 				getRadioService().choon();
@@ -221,7 +221,7 @@ public class FrontPageFragment extends PageFragment{
 				request();
 			}
 		});
-
+*/
 		setInfo();
 
 	}
