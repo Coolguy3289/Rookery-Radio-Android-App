@@ -232,7 +232,7 @@ public class RadioService extends Service {
 			if (!mediaPlayer.isPlaying()) 
 	    	{
 				loading = true;
-	    		String url = "http://stream.hive365.co.uk:8088/live";
+	    		String url = "http://thegamingcorner.net:8000/live";
 	    		
 	    		showNotification();
 	    		
