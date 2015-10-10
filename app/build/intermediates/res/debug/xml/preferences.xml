@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+       
+       <EditTextPreference
+           android:key="username"
+           android:summary="Change your name for Voting"
+           android:title="Change Name"
+           android:defaultValue="Unknown"
+           
+       />
+       <CheckBoxPreference android:title="Begin playing" android:summary="Start radio when app loaded" android:defaultValue="0" android:key="begin_playing"/>
+       <ListPreference android:title="Show new song" android:key="newsong" android:entryValues="@array/newSongVal" android:dialogTitle="Show new song" android:entries="@array/newSong" android:defaultValue="2"/>
+
+</PreferenceScreen>
+<!-- From: file:/C:/Users/Electromuis/Android-Gradle/app/src/main/res/xml/preferences.xml -->

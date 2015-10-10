@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Hive365</string>
+    <string name="action_settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="djinfo">Loading DJ info....</string>
+    <string name="songinfo">Loading song info....</string>
+    <string name="Poon">Poon</string>
+    <string name="Choon">Choon</string>
+    <string name="DJFTW">DJFTW</string>
+    <string name="Request">Request</string>
+    <string name="Shoutout">Shoutout</string>
+    <string name="namelabel">Change name</string>
+    <string name="datalabel">Shoutout/Request:</string>
+    <string name="update">Update</string>
+    <string name="website">Website</string>
+    <string name="vollabel">Volume:</string>
+    <string name="voldown">&lt;</string>
+    <string name="volup">></string>
+    <string name="mutetog">Mute</string>
+    <string name="djftl">DJFTL</string>
+    <string name="imagealt">Hive365 Logo</string>
+    <string name="name_change">Name</string>
+    <string name="pref_vote">Voting</string>
+    <string name="pref_sum_name">Change Your Name for Voting</string>
+    <string name="pref_screen">Settings</string>
+    <string name="pref_cat_1">Basic Settings</string>
+
+</resources>

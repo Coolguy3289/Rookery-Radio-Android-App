@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/settings" android:title="Settings"></item>
+    <item android:id="@+id/play_until" android:title="Play until"></item>
+</menu><!-- From: file:/C:/Users/Electromuis/Android-Gradle/app/src/main/res/menu/context_menu.xml -->
