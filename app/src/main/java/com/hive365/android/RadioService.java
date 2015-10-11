@@ -18,6 +18,7 @@ import android.content.SharedPreferences.Editor;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Binder;
+import android.os.Debug;
 import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
@@ -60,6 +61,14 @@ public class RadioService extends Service {
 	protected boolean requestPlaying = false;
 	
 	public final static String infoIntent = "com.hive365.android.RadioService.INFO";
+
+	public static String convertStandardJSONString(String data_json) {
+		data_json = data_json.replaceAll("\\\\r\\\\n", "");
+		data_json = data_json.replace("\"{", "{");
+		data_json = data_json.replace("}\",", "},");
+		data_json = data_json.replace("}\"", "}");
+		return data_json;
+	}
 	
 	protected ScheduledFuture<?> task;
 	
@@ -444,13 +453,18 @@ public class RadioService extends Service {
 		}
 		String temp_dj = "";
 		String temp_song = "";
-		
+		String temp_info = "";
+
 		try 
 		{
-			JSONObject info = new JSONObject(rhandler.getList().getString("info"));
-			
-			temp_dj = info.getString("server_name").replace("&amp;", "&").trim();
-			temp_song = info.getString("title").replace("&amp;", "&").trim();
+			Log.d("RadioService", rhandler.getList().getString("icestats"));
+			temp_info = rhandler.getList().getString("icestats").toString().replace(",}","}}");
+			Log.d("RadioService", "Temp Info is:" + temp_info);
+			JSONObject info = new JSONObject(temp_info);
+			Log.d("RadioService", "JSON object is: " + info);
+			temp_dj = info.getJSONObject("source").getString("server_name").replace("&amp;", "&").trim();
+			Log.d("RadioService", "Info is: " + info.toString());
+			temp_song = info.getJSONObject("source").getString("title").replace("&amp;", "&").trim();
 			
 			if(!temp_dj.equals(currentDj) && !temp_dj.equals("")){
 				currentDj = temp_dj;
@@ -466,7 +480,7 @@ public class RadioService extends Service {
 		catch (Exception e) 
 		{
 			//noInternet();
-			//e.printStackTrace();
+			e.printStackTrace();
 		}
 		
 		
