@@ -454,16 +454,17 @@ public class RadioService extends Service {
 		String temp_dj = "";
 		String temp_song = "";
 		String temp_info = "";
+
 		try 
 		{
 			Log.d("RadioService", rhandler.getList().getString("icestats"));
 			temp_info = rhandler.getList().getString("icestats").toString().replace(",}","}}");
-
 			Log.d("RadioService", "Temp Info is:" + temp_info);
-			JSONObject info = new JSONObject();
+			JSONObject info = new JSONObject(temp_info);
 			Log.d("RadioService", "JSON object is: " + info);
-			temp_dj = info.getString("server_name").replace("&amp;", "&").trim();
-			temp_song = info.getString("title").replace("&amp;", "&").trim();
+			temp_dj = info.getJSONObject("source").getString("server_name").replace("&amp;", "&").trim();
+			Log.d("RadioService", "Info is: " + info.toString());
+			temp_song = info.getJSONObject("source").getString("title").replace("&amp;", "&").trim();
 			
 			if(!temp_dj.equals(currentDj) && !temp_dj.equals("")){
 				currentDj = temp_dj;
