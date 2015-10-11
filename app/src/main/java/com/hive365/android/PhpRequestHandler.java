@@ -41,8 +41,7 @@ public class PhpRequestHandler {
 
 	public JSONObject getList() {
 		JSONParser parser = new JSONParser();
-		return parser.getJSONFromUrl("http://thegamingcorner.net:8000/status-json.xsl");
-	}
+		return parser.getJSONFromUrl("http://thegamingcorner.net:8000/status-json.xsl");}
 
 	private boolean sendRequest(String type, String request,
 			String votetype) {
