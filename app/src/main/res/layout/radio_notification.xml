@@ -24,13 +24,15 @@
                 android:id="@+id/c_dj"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:background="#fe0707" />
 
             <TextView
                 android:id="@+id/c_song"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="TextView"
+                android:background="#f80707" />
         </LinearLayout>
 
     </LinearLayout>

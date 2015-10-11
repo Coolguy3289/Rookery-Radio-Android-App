@@ -207,7 +207,7 @@
     <string name="ga_trackingId">UA446447311</string>
     <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/values/strings.xml -->
     <eat-comment/>
-    <string name="imagealt">Hive365 Logo</string>
+    <string name="imagealt">Rookery Radio Logo</string>
     <string name="mutetog">Mute</string>
     <string name="name_change">Name</string>
     <string name="namelabel">Change name</string>

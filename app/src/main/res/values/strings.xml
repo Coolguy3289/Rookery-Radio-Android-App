@@ -18,10 +18,10 @@
     <string name="website">Website</string>
     <string name="vollabel">Volume:</string>
     <string name="voldown">&lt;</string>
-    <string name="volup">></string>
+    <string name="volup">&gt;</string>
     <string name="mutetog">Mute</string>
     <string name="djftl">DJFTL</string>
-    <string name="imagealt">Hive365 Logo</string>
+    <string name="imagealt">Rookery Radio Logo</string>
     <string name="name_change">Name</string>
     <string name="pref_vote">Voting</string>
     <string name="pref_sum_name">Change Your Name for Voting</string>
