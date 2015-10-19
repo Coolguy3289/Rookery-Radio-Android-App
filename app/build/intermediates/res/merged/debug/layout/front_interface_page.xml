@@ -117,8 +117,7 @@
             android:layout_weight="1"
             android:thumbTint="#FFFFFF"
             android:progressTint="#fc0f0f"
-            android:progressTintMode="screen"
-            android:progressBackgroundTint="#fa2d2d" />
+            android:progressTintMode="src_in" />
 
     </LinearLayout>
 

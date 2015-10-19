@@ -301,7 +301,7 @@ public class RadioService extends Service {
     	mNM.notify(NOTIFICATION, mBuilder.build());
     }
     
-    private void newSongNotification() {
+    /**private void newSongNotification() {
     	RemoteViews notificationView = new RemoteViews(getPackageName(), R.layout.new_song);
     	
     	notificationView.setOnClickPendingIntent(R.id.new_song_choon, makeActionIntent(AC_CHOON));
@@ -322,7 +322,7 @@ public class RadioService extends Service {
     	// mId allows you to update the notification later on.
     	mNM.notify(NOTIFICATION_SONG, mBuilder.build());
     }
-    
+    **/
     private PendingIntent makeActionIntent(int action){
     	Intent intent = new Intent(this, RadioService.class);
     	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -330,7 +330,7 @@ public class RadioService extends Service {
     	PendingIntent pIntent = PendingIntent.getService(this, 0, intent, 0);
     	return pIntent;
     }
-    
+
     private PendingIntent homeIntent(){
     	Intent homeIntent = new Intent(this, MainActivity.class);
     	homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -419,9 +419,9 @@ public class RadioService extends Service {
     	int sett = Integer.parseInt(getPrefs().getString("newsong", "2"));
     	//Log.i("info", "sett: "+sett);
     	
-    	if(sett==1 || (sett==2 && requestPlaying)){
-    		newSongNotification();
-    	}
+    	//if(sett==1 || (sett==2 && requestPlaying)){
+    	//	newSongNotification();
+    	//}
     	
     	if(mediaPlayer.isPlaying()){
     		showNotification();

@@ -1312,10 +1312,11 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int back=0x7f020033;
         public static final int background=0x7f020034;
-        public static final int birds=0x7f020035;
-        public static final int headbak=0x7f020036;
-        public static final int ic_launcher=0x7f020037;
-        public static final int logo=0x7f020038;
+        public static final int backgroundwhite=0x7f020035;
+        public static final int birds=0x7f020036;
+        public static final int headbak=0x7f020037;
+        public static final int ic_launcher=0x7f020038;
+        public static final int logo=0x7f020039;
     }
     public static final class id {
         public static final int action_bar=0x7f0d0033;
@@ -1335,8 +1336,8 @@ containing a value of this type.
         public static final int always=0x7f0d0016;
         public static final int beginning=0x7f0d0013;
         public static final int bottom=0x7f0d001e;
-        public static final int c_dj=0x7f0d0051;
-        public static final int c_song=0x7f0d0052;
+        public static final int c_dj=0x7f0d004e;
+        public static final int c_song=0x7f0d004f;
         public static final int checkbox=0x7f0d002b;
         public static final int child_txt=0x7f0d0049;
         public static final int collapseActionView=0x7f0d0017;
@@ -1356,25 +1357,22 @@ containing a value of this type.
         public static final int ifRoom=0x7f0d0018;
         public static final int image=0x7f0d0025;
         public static final int imageView=0x7f0d0042;
-        public static final int lastSongs=0x7f0d0054;
+        public static final int lastSongs=0x7f0d0051;
         public static final int listMode=0x7f0d0009;
         public static final int list_item=0x7f0d0027;
         public static final int middle=0x7f0d0015;
         public static final int mutetog=0x7f0d0047;
         public static final int never=0x7f0d0019;
-        public static final int new_song=0x7f0d004d;
-        public static final int new_song_choon=0x7f0d004e;
-        public static final int new_song_poon=0x7f0d004f;
         public static final int none=0x7f0d000e;
         public static final int normal=0x7f0d000a;
         public static final int pager=0x7f0d004b;
         public static final int pager_title_strip=0x7f0d004c;
         public static final int parent_txt=0x7f0d004a;
-        public static final int play_until=0x7f0d0056;
+        public static final int play_until=0x7f0d0053;
         public static final int progress_circular=0x7f0d0005;
         public static final int progress_horizontal=0x7f0d0006;
         public static final int radio=0x7f0d002d;
-        public static final int scheduleList=0x7f0d0053;
+        public static final int scheduleList=0x7f0d0050;
         public static final int search_badge=0x7f0d0037;
         public static final int search_bar=0x7f0d0036;
         public static final int search_button=0x7f0d0038;
@@ -1385,7 +1383,7 @@ containing a value of this type.
         public static final int search_plate=0x7f0d003b;
         public static final int search_src_text=0x7f0d003c;
         public static final int search_voice_btn=0x7f0d0040;
-        public static final int settings=0x7f0d0055;
+        public static final int settings=0x7f0d0052;
         public static final int shortcut=0x7f0d002c;
         public static final int showCustom=0x7f0d000f;
         public static final int showHome=0x7f0d0010;
@@ -1394,7 +1392,7 @@ containing a value of this type.
         public static final int split_action_bar=0x7f0d0007;
         public static final int start=0x7f0d0043;
         public static final int stop=0x7f0d0044;
-        public static final int stop_radio=0x7f0d0050;
+        public static final int stop_radio=0x7f0d004d;
         public static final int submit_area=0x7f0d003e;
         public static final int tabMode=0x7f0d000b;
         public static final int tableLayout=0x7f0d0041;

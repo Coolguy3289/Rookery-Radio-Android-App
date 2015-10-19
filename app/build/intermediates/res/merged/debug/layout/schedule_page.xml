@@ -9,7 +9,8 @@
         android:layout_height="match_parent"
         android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
         android:divider="#A4C739"
-    	android:dividerHeight="0.5dp" />
+    	android:dividerHeight="0.5dp"
+        style="@style/Base.TextAppearance.AppCompat.Title" />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Ralph/Documents/Rookery-Radio-Android-App/app/src/main/res/layout/schedule_page.xml -->
