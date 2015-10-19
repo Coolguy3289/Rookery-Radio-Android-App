@@ -2,7 +2,7 @@
 manifest
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
-		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:3:5-34
+		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:3:5-39
 		INJECTED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -53,14 +53,14 @@ MERGED from [com.android.support:support-v4:21.0.0] C:\Users\Ralph\Documents\Roo
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:16:9-45
 	android:theme
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:18:9-40
-activity#com.rookery.android.MainActivity
+activity#com.rookeryradio.android.MainActivity
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:20:9-30:20
 	android:screenOrientation
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:24:13-49
 	android:label
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:22:13-45
 	android:name
-		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:21:13-60
+		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:21:13-65
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
@@ -71,23 +71,23 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:28:27-74
-activity#com.rookery.android.SettingsActivity
+activity#com.rookeryradio.android.SettingsActivity
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:31:9-36:20
 	android:screenOrientation
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:35:13-49
 	android:label
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:33:13-45
 	android:name
-		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:32:13-64
+		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:32:13-69
 meta-data#LOCALYTICS_APP_KEY
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:37:9-132
 	android:value
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:37:20-96
 	android:name
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:37:97-130
-service#com.rookery.android.RadioService
+service#com.rookeryradio.android.RadioService
 ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:39:9-41:19
 	android:exported
 		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:40:14-38
 	android:name
-		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:39:18-65
+		ADDED from C:\Users\Ralph\Documents\Rookery-Radio-Android-App\app\src\main\AndroidManifest.xml:39:18-70
