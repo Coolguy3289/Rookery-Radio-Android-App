@@ -241,6 +241,7 @@ public class RadioService extends Service {
 			if (!mediaPlayer.isPlaying()) 
 	    	{
 				loading = true;
+				//New URL
 	    		String url = "http://stream.rookeryradio.com:8088/live";
 	    		
 	    		showNotification();
