@@ -16,13 +16,12 @@ repositories {
 
 
 android {
-    compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    compileSdkVersion 26
 
     defaultConfig {
         applicationId "com.rookeryradio.android"
-        minSdkVersion 10
-        targetSdkVersion 21
+        minSdkVersion 14
+        targetSdkVersion 26
     }
 
     buildTypes {
@@ -34,12 +33,9 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.0+'
-    compile 'com.android.support:appcompat-v7:21.0.0+'
-    compile('com.crashlytics.sdk.android:crashlytics:2.6.5@aar') {
-        transitive = true;
-    }
-    compile('com.crashlytics.sdk.android:crashlytics-ndk:1.1.4@aar') {
+    implementation 'com.android.support:support-v4:26.0.0+'
+    implementation 'com.android.support:appcompat-v7:26.0.0+'
+    implementation ('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
         transitive = true;
     }
 }

@@ -9,6 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.json.JSONObject;
 
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -18,11 +19,12 @@ import android.content.SharedPreferences.Editor;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Binder;
-import android.os.Debug;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.preference.PreferenceManager;
 import android.support.v4.app.NotificationCompat;
+import android.support.v4.app.NotificationManagerCompat;
 import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.RemoteViews;
@@ -30,8 +32,11 @@ import android.widget.Toast;
 
 import com.rookeryradio.android.fragments.FrontPageFragment;
 import com.rookeryradio.android.receivers.ReceiverHandler;
+import com.rookeryradio.android.MainActivity;
+
 
 public class RadioService extends Service {
+
 
 	private NotificationManager mNM;
 	private final IBinder mBinder = new LocalBinder();
@@ -61,14 +66,6 @@ public class RadioService extends Service {
 	protected boolean requestPlaying = false;
 	
 	public final static String infoIntent = "com.rookeryradio.android.RadioService.INFO";
-
-	public static String convertStandardJSONString(String data_json) {
-		data_json = data_json.replaceAll("\\\\r\\\\n", "");
-		data_json = data_json.replace("\"{", "{");
-		data_json = data_json.replace("}\",", "},");
-		data_json = data_json.replace("}\"", "}");
-		return data_json;
-	}
 	
 	protected ScheduledFuture<?> task;
 	
@@ -76,7 +73,7 @@ public class RadioService extends Service {
 	
 	public void playUntil(int hour, int min){
 		
-		if(requestPlaying==false){
+		if(!requestPlaying){
 			new Thread(new Runnable(){
 				public void run(){
 					startRadio();
@@ -102,7 +99,7 @@ public class RadioService extends Service {
 		
 	}
 	
-	/*public void shoutout(final String shoutout){
+	public void shoutout(final String shoutout){
 		new Thread(new Runnable(){
 			@Override
 			public void run(){
@@ -180,7 +177,7 @@ public class RadioService extends Service {
 			showMessage("You already rated this dj");
 		}
 	}
-	*/
+	
 	public SharedPreferences getPrefs(){
 		return PreferenceManager.getDefaultSharedPreferences(this);
 	}
@@ -188,10 +185,11 @@ public class RadioService extends Service {
 	public Editor editPrefs(){
 		return getPrefs().edit();
 	}
-	
+
     @Override
     public void onCreate() {
     	super.onCreate();
+
         mNM = (NotificationManager)getSystemService(NOTIFICATION_SERVICE);
         mediaPlayer = new MediaPlayer();
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
@@ -236,12 +234,11 @@ public class RadioService extends Service {
 	
 	public void startRadio(){
 		requestPlaying = true;
-		while(requestPlaying == true)
+		while(requestPlaying)
 		{
 			if (!mediaPlayer.isPlaying()) 
 	    	{
 				loading = true;
-				//New URL
 	    		String url = "http://stream.rookeryradio.com:8088/live";
 	    		
 	    		showNotification();
@@ -285,15 +282,17 @@ public class RadioService extends Service {
     		notificationView.setImageViewResource(R.id.stop_radio, android.R.drawable.ic_media_pause);
     	}
     	NotificationCompat.Builder mBuilder =
-    	        new NotificationCompat.Builder(this)
-    	        .setSmallIcon(R.drawable.logo)
+    	        new NotificationCompat.Builder(this, MainActivity.mNotificationChannel)
+    	        .setSmallIcon(R.drawable.notif_logo)
+				.setContentTitle("Rookery_Radio")
     	        .setContent(notificationView)
+				.setPriority(NotificationCompat.PRIORITY_MIN)
     	        .setOngoing(true);
     	
     	if(loading){
-    		mBuilder.setContentTitle("Hive365 radio loading");
+    		mBuilder.setContentTitle("Rookery Radio loading");
     	} else {
-    		mBuilder.setContentTitle("Hive365 radio playing");
+    		mBuilder.setContentTitle("Rookery Radio playing");
     	}
     
     	mBuilder.setContentIntent(homeIntent());
@@ -302,7 +301,7 @@ public class RadioService extends Service {
     	mNM.notify(NOTIFICATION, mBuilder.build());
     }
     
-    /**private void newSongNotification() {
+    /*private void newSongNotification() {
     	RemoteViews notificationView = new RemoteViews(getPackageName(), R.layout.new_song);
     	
     	notificationView.setOnClickPendingIntent(R.id.new_song_choon, makeActionIntent(AC_CHOON));
@@ -322,8 +321,8 @@ public class RadioService extends Service {
     	
     	// mId allows you to update the notification later on.
     	mNM.notify(NOTIFICATION_SONG, mBuilder.build());
-    }
-    **/
+    }*/
+    
     private PendingIntent makeActionIntent(int action){
     	Intent intent = new Intent(this, RadioService.class);
     	intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -331,7 +330,7 @@ public class RadioService extends Service {
     	PendingIntent pIntent = PendingIntent.getService(this, 0, intent, 0);
     	return pIntent;
     }
-
+    
     private PendingIntent homeIntent(){
     	Intent homeIntent = new Intent(this, MainActivity.class);
     	homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
@@ -364,10 +363,10 @@ public class RadioService extends Service {
 	    		int action = intent.getIntExtra("action", 0);
 	    		
 	    		switch(action){
-	    	//		case AC_CHOON:
-	    	//			choon();
-	    	//		case AC_POON:
-	    	//			poon();
+	    			case AC_CHOON:
+	    				choon();
+	    			case AC_POON:
+	    				poon();
 	    			case AC_STOP_RADIO:
 	    				stopRadio();
 	    		}
@@ -420,9 +419,9 @@ public class RadioService extends Service {
     	int sett = Integer.parseInt(getPrefs().getString("newsong", "2"));
     	//Log.i("info", "sett: "+sett);
     	
-    	//if(sett==1 || (sett==2 && requestPlaying)){
-    	//	newSongNotification();
-    	//}
+    	if(sett==1 || (sett==2 && requestPlaying)){
+    		//newSongNotification();
+    	}
     	
     	if(mediaPlayer.isPlaying()){
     		showNotification();
@@ -455,7 +454,7 @@ public class RadioService extends Service {
 		String temp_dj = "";
 		String temp_song = "";
 		String temp_info = "";
-
+		
 		try 
 		{
 			//Log.d("RadioService", rhandler.getList().getString("icestats"));
@@ -466,12 +465,12 @@ public class RadioService extends Service {
 			temp_dj = info.getJSONObject("source").getString("server_name").replace("&amp;", "&").trim();
 			//Log.d("RadioService", "Info is: " + info.toString());
 			temp_song = info.getJSONObject("source").getString("title").replace("&amp;", "&").trim();
-			
+
 			if(!temp_dj.equals(currentDj) && !temp_dj.equals("")){
 				currentDj = temp_dj;
 				newDj();
 			}
-			
+
 			if(!temp_song.equals(currentSong) && !temp_song.equals("")){
 				currentSong = temp_song;
 				newSong();
@@ -481,16 +480,16 @@ public class RadioService extends Service {
 		catch (Exception e) 
 		{
 			//noInternet();
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 		
 		
 
 	}
 
-	//public String getUsername() {
-	//	return getPrefs().getString("username", "Unknown");
-	//}
+	public String getUsername() {
+		return getPrefs().getString("username", "Unknown");
+	}
 	
 	public boolean getStatus()
     {
@@ -503,7 +502,7 @@ public class RadioService extends Service {
     }
     public boolean getLoading()
     {
-    	if(requestPlaying == true && mediaPlayer.isPlaying() == false)
+    	if(requestPlaying && !mediaPlayer.isPlaying())
     		return true;
     	else
     		return false;
